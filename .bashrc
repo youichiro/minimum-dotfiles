@@ -10,6 +10,8 @@ alias ..='cd ..'
 alias ...='cd ../..'
 alias reload='exec $SHELL -l'
 
+export PS1="[\u@\h] \w \$ "
+
 cd ()
 {
   builtin cd "$@" && ls
