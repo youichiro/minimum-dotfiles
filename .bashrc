@@ -28,7 +28,7 @@ export PS1="[\u@\h] \w \$ "
 # execute ls after cd
 cd ()
 {
-  builtin cd "$@" && ls
+  builtin cd "$@" && ls --color=auto
 }
 
 if [ -f /etc/bashrc ]; then
